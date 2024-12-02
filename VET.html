@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>Média de Valores</title>
     <script>
-        // Declara o vetor vazio
+        // Declara
         let VET = [];
         let soma = 0;
 
-        // Preenche o vetor com valores fornecidos pelo usuário
+        // Preenche 
         for (let i = 0; i < 5; i++) {
             let numero = parseFloat(prompt(`Digite o ${i + 1}º número real:`));
             VET[i] = numero; // Adiciona o número ao vetor
             soma += numero; // Soma os valores
         }
 
-        // Calcula a média
+        // Calcula
         let media = soma / VET.length;
 
-        // Exibe os resultados
+        // resultados
         alert("Os números fornecidos foram: " + VET.join(", "));
         alert("A média dos números é: " + media.toFixed(2));
     </script>
