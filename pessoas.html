@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Pessoas</title>
+    <script>
+        // Solicita ao usuário o número de pessoas
+        let numeroDePessoas = parseInt(prompt("Digite o número de pessoas:"), 10);
+        let nomes = []; // Declara o vetor para armazenar os nomes
+
+        // Recebe os nomes das pessoas
+        for (let i = 0; i < numeroDePessoas; i++) {
+            let nome = prompt(`Digite o nome da pessoa ${i + 1}:`);
+            nomes.push(nome); // Adiciona o nome ao vetor
+        }
+
+        // Imprime o vetor de nomes
+        alert("Os nomes digitados foram:\n" + nomes.join(", "));
+    </script>
+</head>
+<body>
+</body>
+</html>

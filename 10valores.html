@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordem Inversa</title>
+    <script>
+        // Declara o vetor vazio
+        let numeros = [];
+
+        // Lê 10 valores numéricos do usuário
+        for (let i = 0; i < 10; i++) {
+            let numero = parseFloat(prompt("Digite um valor numérico:"));
+            numeros[i] = numero;
+        }
+
+        // Imprime os valores na ordem inversa
+        let mensagem = "Valores na ordem inversa:\n";
+        for (let j = numeros.length - 1; j >= 0; j--) {
+            mensagem += numeros[j] + "\n";
+        }
+        alert(mensagem);
+    </script>
+</head>
+<body>
+</body>
+</html>

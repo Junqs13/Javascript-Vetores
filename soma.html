@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma de Valores</title>
+    <script>
+        // Declara o vetor vazio
+        let valores = [];
+        let soma = 0;
+
+        // Alimenta o vetor com um for
+        for (let i = 0; i < 5; i++) {
+            let valor = parseInt(prompt("Digite um valor inteiro:"), 10);
+            // Adiciona o valor ao vetor
+            valores[i] = valor;
+            // Soma os valores
+            soma += valor;
+        }
+
+        // Imprime o vetor
+        alert("Valores digitados: " + valores.join(", "));
+        // Imprime a soma
+        alert("A soma dos valores é: " + soma);
+    </script>
+</head>
+<body>
+</body>
+</html>
